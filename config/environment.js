@@ -23,8 +23,8 @@ module.exports = function (environment) {
         databaseURL: "https://sovina-dev.firebaseio.com",
         storageBucket: "sovina-dev.appspot.com",
         messagingSenderId: "657303233429"
-
       },
+      torii: {sessionServiceName: 'session'},
 
     APP: {
       // Here you can pass flags/options to your application instance

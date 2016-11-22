@@ -1,0 +1,17 @@
+<div class="row">
+  <div class="col-md-6 col-md-offset-3 well">
+    <form>
+      <div class="form-group">
+        <label for="exampleInputEmail1">E-mail</label>
+        {{input type="email" value=email class="form-control" placeholder="E-mail"}}
+      </div>
+      <div class="form-group">
+        <label for="exampleInputPassword1">Senha</label>
+        {{input type="password" value=password class="form-control" placeholder="Senha"}}
+      </div>
+      <center>
+        <button {{action "userSignAction"}} type="submit" class="btn btn-primary">{{btnLabel}}</button>
+      </center>
+    </form>
+  </div>
+</div>
