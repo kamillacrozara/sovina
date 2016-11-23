@@ -1,8 +1,6 @@
-{{main-header session=session}}
+{{main-header session=session signOut=(route-action "signOut")}}
 
 <div class="container">
-
-  <!-- Main component for a primary marketing message or call to action -->
   {{outlet}}
   {{ember-notify messageStyle='bootstrap'}}
 </div>

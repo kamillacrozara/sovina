@@ -11,14 +11,18 @@
     </div>
 
     <div id="navbar" class="navbar-collapse collapse">
+      {{#if session.isAuthenticated}}
       <ul class="nav navbar-nav">
         <li>
           {{link-to "Novo Gasto" 'outcome.new'}}
         </li>
       </ul>
+      {{/if}}
       <ul class="nav navbar-nav navbar-right">
         {{#if session.isAuthenticated}}
-          <li><a href="#">Sair</a></li>
+        <button class='btn btn-default navbar-btn' {{action 'signOut'}}>
+                  {{fa-icon 'sign-out'}} Sair
+              </button>
         {{else}}
           <li>
             {{link-to "Entrar" 'sign-in'}}
